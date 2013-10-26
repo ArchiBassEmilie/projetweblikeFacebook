@@ -28,12 +28,12 @@ Pour nous permettre de développer cette page web, nous avons utilisé les techn
   -CSS
   -MySQL
   
-  Les pré-requis à installer dans la debian
-  =========================================
+Les pré-requis à installer dans la debian
+=========================================
   
   Pour exécuter le fichier .war, il est nécessaire d'avoir installer au préalable dans la debian:
   - La version du serveur tomcat 6 (apt-get install tomcat6)
   - Une version de MySQL (apt-get install my sql)
 
-  Procédure d'exécution
-  ======================
+Procédure d'exécution
+======================
