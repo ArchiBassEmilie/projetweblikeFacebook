@@ -1,0 +1,465 @@
+* {
+	font-family: verdana;
+}
+
+body {
+	font-size: 13px;
+	margin: 0;
+	/*background-color: #ccc;*/
+}
+
+#bar {
+	height: 20px;
+}
+
+#global, #browser, #header {
+	margin: auto;
+	width: 95%;
+}
+
+#login {
+	margin: auto;
+	width: 360px;
+	margin-top: 200px;
+	border: 3px double #999;
+	background-color: #3c5a9a;
+}
+
+#header {
+	background-color: #3c5a9a;
+	border: none;
+}
+
+#header-logo {
+	background: url('img/facebook.png') no-repeat;
+	float: left;
+	width: 15%;
+}
+
+#header2 {
+	background-color:  #3c5a9a;
+}
+
+#header2-logo {
+	background: url('img/facebook.png') no-repeat;
+	/*bheight: 40px; */
+}
+
+#browser {
+	margin-bottom: 10px;
+	height: 30px;
+	
+	list-style-type: none;
+	padding: 0;
+	float: left;
+	width: 84%;
+}
+
+#browser li {
+	float: left;
+	margin-right: 5px;
+	background-color: #3c5a9a;
+}
+
+#browser li.timezone {
+	float: right;
+	font-size: 11px;
+}
+
+#browser li.current a {
+	background-color: #3c5a9a;
+	color: #fff;
+}
+
+#browser li a{
+	display: block;
+	padding: 5px 10px;
+	border-top: none;
+	
+	background-color: #eee;
+	border: 1px solid #fff;
+	border-top: none;
+}
+
+h2 {
+	color: #3c5a9a;
+	border: 1px solid #999;
+	background-color: #fff;
+	border-bottom: none;
+	position: relative;
+	padding: 2px;
+	top: 1px;
+	margin: 0;
+	font-size: 13px;
+	width: 200px;
+	text-align: center;
+}
+
+.panel {
+	border: 3px double #999;
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding-bottom:20px;
+}
+
+
+#form table {
+	margin: 10px;
+}
+
+#overlay {
+	background: url('img/overlay.png') repeat #666;
+	position: absolute;
+	z-index: 15;
+	
+	filter:alpha(opacity=30);
+	opacity: .30;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; /*--Transparence sous IE 8--*/
+}
+
+.dialog {
+	position: absolute;
+	width: 640px;
+	border: 3px double #999;
+	background-color: #fff;
+	left: 50%;
+	margin-left: -320px;
+	margin-top: -100px;
+	z-index: 16;
+}
+
+.details {
+	margin: 10px auto;
+	width: 95%;
+}
+
+.information {
+	color:  #3c5a9a;
+	font-weight: bold;
+}
+
+.element {
+	text-decoration: underline;
+	font-weight: bold;
+	padding-left: 30px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a.mail {
+	background: url('img/email_edit.png') no-repeat;
+	padding: 2px 0 2px 20px;
+	color: #888;
+	border-bottom: 1px dashed #ccc;
+}
+a.mail:hover {
+	color: #ff0084;
+}
+
+h1 {
+	font-size: 22px;
+	margin: 0;
+	padding: 0 0 6px 20px;
+	visibility: hidden;
+}
+
+h3 {
+	margin: 5px;
+}
+
+p {
+	margin: 0px;
+	padding: 5px;
+}
+
+.clear {
+	clear: both;
+}
+
+hr {
+	color:  #3c5a9a;
+	background-color: #B22222;
+	height: 1px;
+	border: none;
+}
+
+a img {
+	border: none;
+}
+
+form {
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #3c5a9a;
+	border-left:1px solid #3c5a9a;
+	border-bottom:1px solid #3c5a9a;
+	border-right:1px solid #3c5a9a;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 0;
+}
+
+legend {
+	color: #3c5a9a;
+	font-weight: bold;
+}
+
+label {
+	cursor: pointer;
+}
+
+#fields {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#fields .label {
+	background: url('img/fields.png') no-repeat 6px 4px #eee;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+#fields select {
+	width: 200px;
+}
+
+#formLoader, #fade {
+	background: url('img/fade.png') repeat #666;
+	position: absolute;
+
+	filter:alpha(opacity=30);
+	opacity: .30;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; /*--Transparence sous IE 8--*/
+}
+
+#formLoaderLabel {
+	left: 50%;
+	position: absolute;
+	width: 80px;
+	margin: 60px 0 0 -40px;
+	background: url('img/ajax-loader.gif') no-repeat 2px 3px #fff;
+	padding: 4px 0 4px 24px;
+	border: 3px double #ccc;
+}
+
+.dateLabel {
+	background: url('img/calendar.png') no-repeat;
+	padding: 1px 0 0 20px;
+}
+
+legend {
+	margin-left: 20px;
+}
+
+/* BUTTONS */
+.button {
+	border: 1px outset #999;
+	background-color: #fff;
+	cursor: pointer;
+	padding: 2px;
+	width: 0;  /* IE table-cell margin fix */
+    overflow: visible;
+	line-height: 18px;
+}
+
+input.button[class] {  /* IE < 7 ignores [class] */
+    width: auto;  /* cancel margin fix for other browsers */
+}
+
+.button:hover {
+	border-color: #b22222;
+}
+
+a.button:hover {
+	border-color: #b22222;
+	text-decoration: none;
+}
+
+.buttonSelectAll, .buttonDeselectAll, .buttonGenerate, .buttonEmail, .buttonXML, .buttonXLS, .buttonRemove, .buttonEdit, .buttonCreate, .buttonDisable, .buttonEnable, .buttonSee {
+	padding-left: 22px;
+}
+
+.buttonSelectAll { background: url('img/selectAll.png') no-repeat 2px; }
+.buttonDeselectAll { background: url('img/deselectAll.png') no-repeat 2px; }
+.buttonGenerate { background: url('img/report.png') no-repeat 2px; }
+.buttonEmail { background: url('img/email.png') no-repeat 2px; }
+.buttonXML { background: url('img/xml.png') no-repeat 2px; }
+.buttonXLS { background: url('img/excel.png') no-repeat 2px; }
+.buttonSee { background: url('img/see.png') no-repeat 2px; }
+
+.buttonRemove { background: url('img/remove.png') no-repeat 2px; }
+.buttonEdit { background: url('img/edit.png') no-repeat 2px; }
+.buttonCreate { background: url('img/add.png') no-repeat 2px; }
+.buttonEnable { background: url('img/accept.png') no-repeat 2px; }
+.buttonDisable { background: url('img/cancel.png') no-repeat 2px; }
+
+.field, .usernameField, .passwordField  {
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+
+.usernameField {
+	background: url('img/user.png') no-repeat 2px;
+	padding-left: 22px;
+}
+
+.passwordField {
+	background: url('img/password.png') no-repeat 2px;
+	padding-left: 22px;
+}
+
+.notice {
+	color: #b22222;
+	font-style:italic;
+}
+
+.text, select, textarea {
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	font-size: 13px;
+}
+
+.select {
+	width: 300px;
+}
+
+.text:focus {
+	border: 1px solid #000;
+}
+
+.enabled {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+
+.disabled {
+	color: #D8000C;
+	background-color: #FFBABA;
+}
+
+.center {
+	text-align:center;
+}
+
+.right {
+	text-align: right;
+}
+
+.tab-active {
+	background-color: #ccc;
+}
+
+.resultTable {
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.resultTable  thead tr {
+	background-color: #b22222;
+}
+
+.resultTable thead th {
+	padding: 4px;
+	color: #fff;
+}
+
+.resultTable tbody td {
+	padding: 2px;
+}
+
+
+.resultTable .details {
+	display: none;
+}
+
+.resultTable tr.title {
+	font-weight: bold;
+}
+
+.resultTable tr.title td {
+	padding: 5px;
+}
+
+.resultTable tr.thermoprod {
+	background-color: #eee;
+	border-top: 1px solid #ccc;
+}
+
+.resultTable2 {
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	border: 1px solid #999;
+}
+
+.resultTable2 thead tr {
+	background-color: #ccc;
+}
+
+.resultTable2 thead tr th {
+	border-bottom: 2px solid #b22222;
+}
+
+.resultTable2 thead th {
+	padding: 4px;
+}
+
+.resultTable2 tbody td {
+	padding: 2px;
+}
+
+.advice {
+	padding: 20px;
+}
+
+#submit {
+	position: absolute;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url('img/bg.gif');
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url('img/asc.gif');
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url('img/desc.gif');
+}
+
+tr.admin { 
+	background-color: #FFBABA;
+}
+
+
+.error {
+	border: 1px solid #b22222;
+	color: #b22222;
+	margin: 10px;
+}
+
+.profile {
+	color: #b22222;
+	font-weight: bold;
+}
+div.positionMenuLogin{
+	left: 22em;
+    position: relative;
+    top: 5em;
+    width: 43em;
+    border-color: solid 2px red;
+	}

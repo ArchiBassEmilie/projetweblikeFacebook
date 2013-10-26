@@ -1,0 +1,22 @@
+div.main_container {   
+
+	background-image: url("../images/galerie/sacre-coeur-form-court.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 980px;  
+    top: 1.45em;  
+    position: relative;
+    height: 35em;
+	background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+}
+
+
+div.commentaire{
+	
+	position:relative;
+	left:2em;
+	
+}
